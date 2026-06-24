@@ -38,6 +38,7 @@ struct SwiftPlayground {
                 if timeAllowed >= 1 {
                     if timeAllowed <= 5 {
                         runningLesser = false
+                        
                     }
                     else {
                         errorInput()
@@ -171,6 +172,8 @@ struct SwiftPlayground {
                     runningSunday = false
                 }
             }
+
+
             runningGreater = false
             
 
@@ -179,6 +182,9 @@ struct SwiftPlayground {
         if counterTotal >= totalTimeInWeek {
             print("Would you mind sharing your time-turner with the rest of us? We mortals don't have time travel.")
             print("The total screen time was more than the number of hours in the week. This is, obviously, over the limit.")
+        } 
+        else {
+            print("Your total screen time was \(counterTotal). ")
         }
     }
 }
