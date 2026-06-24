@@ -61,6 +61,9 @@ struct SwiftPlayground {
                         //doing restrict to 24 hour
                         counterMonday = counterMonday + temporaryCounter
                     }
+                    else {
+                        errorInput()
+                    }
                 }
                 else {
                     runningMonday = false
@@ -74,6 +77,9 @@ struct SwiftPlayground {
                     print("How many hours did you spend on \(socialPlatforms[platformChooser]) this Tuesday?")
                     if let userInput = readLine(), let temporaryCounter = Double(userInput) {
                         counterTuesday = counterTuesday + temporaryCounter
+                    }
+                    else {
+                        errorInput()
                     }
                 }
                 else {
@@ -89,6 +95,9 @@ struct SwiftPlayground {
                     if let userInput = readLine(), let temporaryCounter = Double(userInput) {
                         counterWednesday = counterWednesday + temporaryCounter
                     }
+                    else {
+                        errorInput()
+                    }
                 }
                 else {
                     runningWednesday = false
@@ -102,6 +111,9 @@ struct SwiftPlayground {
                     print("How many hours did you spend on \(socialPlatforms[platformChooser]) this thursday?")
                     if let userInput = readLine(), let temporaryCounter = Double(userInput) {
                         counterThursday = counterThursday + temporaryCounter
+                    }
+                    else {
+                        errorInput()
                     }
                 }
                 else {
@@ -117,6 +129,9 @@ struct SwiftPlayground {
                     if let userInput = readLine(), let temporaryCounter = Double(userInput) {
                         counterFriday = counterFriday + temporaryCounter
                     }
+                    else {
+                        errorInput()
+                    }
                 }
                 else {
                     runningFriday = false
@@ -131,6 +146,9 @@ struct SwiftPlayground {
                     if let userInput = readLine(), let temporaryCounter = Double(userInput) {
                         counterSaturday = counterSaturday + temporaryCounter
                     }
+                    else {
+                        errorInput()
+                    }
                 }
                 else {
                     runningSaturday = false
@@ -144,6 +162,9 @@ struct SwiftPlayground {
                     print("How many hours did you spend on \(socialPlatforms[platformChooser]) this sunday?")
                     if let userInput = readLine(), let temporaryCounter = Double(userInput) {
                         counterSunday = counterSunday + temporaryCounter
+                    }
+                    else {
+                        errorInput()
                     }
                 }
                 else {
